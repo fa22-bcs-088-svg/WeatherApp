@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Enter the name of the City to find its weather conditions");
         Scanner city = new Scanner(System.in);
         String cityName = city.nextLine();
-        Weather weather= Service.getApi(cityName);
+        Weather weather= Service.CallApi(cityName);
         System.out.println(weather);
     }
 }
